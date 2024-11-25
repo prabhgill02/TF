@@ -4,6 +4,7 @@
 # main.tf
 
 provider "aws" {
+  # You can add here access_key, secret_key and token of your own as well
   region = "us-east-1" 
 }
 
@@ -12,7 +13,7 @@ resource "aws_instance" "web_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "8946518_Prabhdeep_Singh_Lab3" 
+    Name = "eC2 instance" 
   }
 }
 
